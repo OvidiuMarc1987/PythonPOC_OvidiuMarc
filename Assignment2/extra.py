@@ -1,5 +1,6 @@
 
 def remove_element_from_tuple():
+    print("###1st Task")
     tuple_elements = (1, 2, 3, 4)
 
     print(f"Elements in the tuple: {tuple_elements}")
@@ -22,10 +23,31 @@ def remove_element_from_tuple():
 
 
 def change_last_item_list():
+    print("###2nd Task")
     original_list = [1, 2, 3, 4, "almost", "final"]
     print(f"Original list: {original_list}")
     original_list[-1] = "last"
     print(f"Edited list {original_list}")
+
+
+def extract_strings_from_list():
+    print("###3rd Task")
+    slist = ['I', 'am', 1, 'list', 'of', 5, 'strings']
+    print(f"Initial list: {slist}")
+    extracted_strings_list = [x for x in slist if isinstance(x, str)]
+    print(f"Extracted list: {extracted_strings_list}")
+
+
+def generate_matrix():
+    x = "x"
+    line = "_"
+    for i in range(3):
+        for z in range(3):
+            if z == i:
+                print(x, end="")
+            else:
+                print(line, end="")
+        print()
 
 
 if __name__ == "__main__":
@@ -33,3 +55,7 @@ if __name__ == "__main__":
     remove_element_from_tuple()
     # 2nd task
     change_last_item_list()
+    # 3rd task
+    extract_strings_from_list()
+    # 4th task
+    generate_matrix()
