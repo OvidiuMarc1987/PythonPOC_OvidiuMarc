@@ -60,14 +60,14 @@ def main():
     #     print(i)
     # print(years_from_file)
     ger_dataset = dict_germany(dataset)
-    print("one dict that groups all data by year for Germany > germany = {2017: [sex, health_index]} ")
+    print("one dict that groups all data by year_list for Germany > germany = {2017: [sex, health_index]} ")
     for i in ger_dataset:
         print(i, ger_dataset.get(i))
     print(dataset[6])
     print(dataset[44])
 
     all_countries_dataset = dict_allcountries(dataset)
-    print("two dicts that group all data by country for each year")
+    print("two dicts that group all data by country for each year_list")
     for x in all_countries_dataset:
         print(x, all_countries_dataset.get(x))
 

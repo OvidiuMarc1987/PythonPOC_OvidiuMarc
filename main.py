@@ -1,5 +1,5 @@
 # This is a sample Python script.
-
+import dis
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -52,12 +52,14 @@ def call_function():
 
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
-    number_data_types()
-    string_data_types()
-    list_data_types()
-    fibonacci()
-    flow_control()
-    a = call_function()
-    a(2)
+    # print_hi('PyCharm')
+    # number_data_types()
+    # string_data_types()
+    # list_data_types()
+    # fibonacci()
+    dis.dis(flow_control)
+    # flow_control()
+    # a = call_function()
+    # a(2)
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
